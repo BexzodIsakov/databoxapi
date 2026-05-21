@@ -1,6 +1,8 @@
 # DataboxAPI
 
-Free fake REST API for frontend prototyping and testing.
+DataboxAPI is a free fake REST API for frontend developers who need realistic data to prototype and test against — without setting up their own backend. Think JSONPlaceholder, but with an e-commerce dataset: products, categories, brands, and users.
+
+All endpoints return real MongoDB documents. Write operations (POST, PUT, PATCH, DELETE) are intentionally simulated — they validate input and return the expected response, but never modify the database, so the dataset stays consistent for everyone.
 
 **Live:** [databoxapi.com](https://databoxapi.com) &nbsp;·&nbsp; **Docs:** [databoxapi.com/docs](https://databoxapi.com/docs)
 
