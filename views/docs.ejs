@@ -206,33 +206,45 @@
                     </div>
                   </section>
                   <section>
-                    <h4><a href="#by_minPrice" id="by_minPrice" class="anchor-link">Minimum price</a></h4>
-                    <p>Retrieves a list of products with prices greater than or equal to the specified minimum value.
-                    </p>
-                    <div>
-                      <%- include('partials/codeBlock', { code: `
-                        fetch("https://databoxapi.com/api/products?minPrice=10")`}) %>
+                    <h3 id="by_priceRange" class="mb-4"><a href="#by_priceRange" class="anchor-link">Price range</a>
+                    </h3>
+                    <div class="space-y-6">
+                      <section>
+                        <h4><a href="#by_minPrice" id="by_minPrice" class="anchor-link">Minimum price</a></h4>
+                        <p>Retrieves a list of products with prices greater than or equal to the specified minimum
+                          value.
+                        </p>
+                        <div>
+                          <%- include('partials/codeBlock', { code: `
+                            fetch("https://databoxapi.com/api/products?minPrice=10")`}) %>
+                        </div>
+                      </section>
+                      <section>
+                        <h4><a href="#by_maxPrice" id="by_maxPrice" class="anchor-link">Maximum price</a></h4>
+                        <p>Retrieves a list of products with prices less than or equal to the specified maximum value.
+                        </p>
+                        <div>
+                          <%- include('partials/codeBlock', { code: `
+                            fetch("https://databoxapi.com/api/products?maxPrice=100")`}) %>
+                        </div>
+                      </section>
+                      <section>
+                        <h4><a href="#by_minMaxPrice" id="by_minMaxPrice" class="anchor-link">Between minimum and
+                            maximum
+                            price</a>
+                        </h4>
+                        <p>Filters products within a specific price range by allowing you to set both a minimum and
+                          maximum
+                          price limit.</p>
+                        <div>
+                          <%- include('partials/codeBlock', { code: `
+                            fetch("https://databoxapi.com/api/products?minPrice=10&maxPrice=100")`}) %>
+                        </div>
+                      </section>
                     </div>
+
                   </section>
-                  <section>
-                    <h4><a href="#by_maxPrice" id="by_maxPrice" class="anchor-link">Maximum price</a></h4>
-                    <p>Retrieves a list of products with prices less than or equal to the specified maximum value.</p>
-                    <div>
-                      <%- include('partials/codeBlock', { code: `
-                        fetch("https://databoxapi.com/api/products?maxPrice=100")`}) %>
-                    </div>
-                  </section>
-                  <section>
-                    <h4><a href="#by_minMaxPrice" id="by_minMaxPrice" class="anchor-link">Between minimum and maximum
-                        price</a>
-                    </h4>
-                    <p>Filters products within a specific price range by allowing you to set both a minimum and maximum
-                      price limit.</p>
-                    <div>
-                      <%- include('partials/codeBlock', { code: `
-                        fetch("https://databoxapi.com/api/products?minPrice=10&maxPrice=100")`}) %>
-                    </div>
-                  </section>
+
                   <section>
                     <h4><a href="#by_minDiscount" id="by_minDiscount" class="anchor-link">By minimum discount</a></h4>
                     <p>Retrieves products with discounts equal to or greater than the specified percentage.</p>

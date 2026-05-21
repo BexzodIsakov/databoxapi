@@ -50,7 +50,7 @@ router.get("/:id", async (req, res, next) => {
   const { id } = req.params;
 
   try {
-    const product = await Product.find({id});
+    const product = await Product.findOne({id});
 
     if (!product) {
       const error = new Error("Product not found!");
@@ -121,7 +121,7 @@ router.delete("/:id", async (req, res, next) => {
   const { id } = req.params;
 
   try {
-    const product = await Product.find({id});
+    const product = await Product.findOne({id});
 
     if (!product) {
       const error = new Error("Product not found!");

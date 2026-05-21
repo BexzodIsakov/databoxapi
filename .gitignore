@@ -2,7 +2,6 @@ README.Local.md
 
 # Node.js dependencies
 node_modules/
-package-lock.json
 yarn.lock
 
 # Logs
@@ -58,4 +57,4 @@ docs/
 uploads/
 
 # Ignore public directory (if used for generated static content)
-public/
+# public/

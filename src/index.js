@@ -1,6 +1,6 @@
 const express = require("express");
 const hljs = require("highlight.js");
-const { productsRouter, categoriesRouter, brandsRouter } = require("./routers");
+const { productsRouter, categoriesRouter, brandsRouter, usersRouter } = require("./routers");
 require("./dotenv-config");
 require("./mongoose");
 
@@ -27,6 +27,7 @@ app.set("view engine", "ejs");
 app.use("/api/products", productsRouter);
 app.use("/api/categories", categoriesRouter);
 app.use("/api/brands", brandsRouter);
+app.use("/api/users", usersRouter);
 
 app.use((err, _, res, next) => {
   if (err.name === "ValidationError") {
