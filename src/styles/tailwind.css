@@ -19,7 +19,7 @@
   body {
     background-color: #f9f9f7;
     min-height: 100vh;
-    @apply text-sm;
+    @apply text-sm text-gray-900;
   }
 
   @screen sm {

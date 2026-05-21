@@ -6,6 +6,11 @@ All endpoints return real MongoDB documents. Write operations (POST, PUT, PATCH,
 
 **Live:** [databoxapi.com](https://databoxapi.com) &nbsp;·&nbsp; **Docs:** [databoxapi.com/docs](https://databoxapi.com/docs)
 
+## Screenshots
+
+![Homepage](public/images/screenshot-home.png)
+![Docs](public/images/screenshot-docs.png)
+
 ## Endpoints
 
 | Resource | URL |
